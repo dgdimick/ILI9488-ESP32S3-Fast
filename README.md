@@ -1,19 +1,40 @@
-### ILI9488-ESP32S3-FAST Arduino Library
+# ILI9488-ESP32S3-FAST Arduino Library
 
-07-07-2025
+**Last Updated: July 7, 2025**
+**Author: Denis Dimick**
+**Forked from:** [Jaret Burkett's original ILI9488 repository](https://github.com/jaretburkett/ILI9488)
 
-This repository is a personal branch ofJaret Burkett's repository https://github.com/jaretburkett/ILI9488
+---
 
-I made this so I could get a ILI9488 display work with ESP32-S3's - this library will ONLY support ESP32's it no longer supports any other chips. 
+This repository is a personal branch of Jaret Burkett's ILI9488 library. I made this so I could get an ILI9488 display working with ESP32-S3 boards.
 
-I've included the orginal readme.md below
+> ?? This library **only supports ESP32 chips**. All support for other microcontrollers has been removed.
 
-================================================================================================================
+I’ve included the original README content from the source repository below for reference.
 
-This library is for support for the 320x480 tft controller over 4 wire SPI. It is based heavily on the [Adafruit_ILI9341](https://github.com/adafruit/Adafruit_ILI9341) library and is designed to work with the [Adafruit_GFX library](https://github.com/adafruit/Adafruit-GFX-Library). 
+---
 
-I have made some heavy modifications, as the typical Adafruit TFT libraries are designed to work with 16bit color (RGB565), and the ILI9488 can only do 24bit (RGB888) color in 4 wire SPI mode. You can still use the library EXACTLY like you would for 16bit mode color, the colors are converted before sending to the display. What this means is, things will be slower than normal. Not only do you have to write twice as many pixels as a normal 240x320 display, 153,600px (320x480) vs 76,800px (240x320), but you also have to do a lightweight conversion on each color, and write 3 bytes vs 2bytes per pixel.
+## Original README (by Jaret Burkett)
 
-For this reason, I do not recommend an AVR based Arduino for this library, although it will still work. I highly recommend a faster microcontroller based on ARM such as the Teensy, [STM32duino](https://github.com/rogerclarkmelbourne/Arduino_STM32), Arduino Zero, or the Arduing Due.
+This library is for support for the 320x480 TFT controller over 4-wire SPI. It is based heavily on the [Adafruit\_ILI9341](https://github.com/adafruit/Adafruit_ILI9341) library and is designed to work with the [Adafruit\_GFX library](https://github.com/adafruit/Adafruit-GFX-Library).
 
-On the STM32duino, DMA is supported and is therefore much faster. 
+I have made some heavy modifications, as the typical Adafruit TFT libraries are designed to work with 16-bit color (RGB565), and the ILI9488 can only do 24-bit (RGB888) color in 4-wire SPI mode. You can still use the library EXACTLY like you would for 16-bit mode color—the colors are converted before sending to the display.
+
+What this means is:
+
+* Things will be slower than normal.
+* Not only do you have to write twice as many pixels as a normal 240x320 display (153,600px vs 76,800px),
+* But you also have to do a lightweight conversion on each color and write 3 bytes instead of 2 bytes per pixel.
+
+For this reason, I do **not recommend** an AVR-based Arduino for this library, although it will still work.
+
+> ? Highly recommended: Faster microcontrollers based on ARM or ESP32 such as:
+>
+> * ESP32 (this fork supports ESP32-S3)
+> * Teensy
+> * [STM32duino](https://github.com/rogerclarkmelbourne/Arduino_STM32)
+> * Arduino Zero
+> * Arduino Due
+
+On STM32duino, DMA is supported and therefore performance is significantly better.
+
