@@ -43,7 +43,8 @@ This is a fast and simplified fork of [jaretburkett's ILI9488 library](https://g
 #define TFT_RST   8
 #define TFT_BL   39  // Optional: Backlight control pin
 
-## Wiring Example (ESP32-S2)
+
+## ESP32-S2
 
 ```cpp
 #define TFT_CS   37
