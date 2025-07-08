@@ -21,14 +21,14 @@ This is a fast and simplified fork of [jaretburkett's ILI9488 library](https://g
 
 > \* The ST7796S controller is not explicitly initialized but is compatible with the ILI9488 command set. The library functions (text, graphics, etc.) have been verified to work on ST7796S modules with proper SPI wiring.
 
-## ?? Example Sketches
+## Example Sketches
 
 - `ESP32-S2-Hello_World-simple.ino` — Basic test (works on ILI9488 and ST7796S)
 - `ESP32-S3-Hello_World-simple.ino` - Basic test (works on ILI9488 and ST7796S)
 - `Speed_test.ino` — Fast text rendering
 - `Bouncing_Ball.ino` — Simple animation
 
-## ?? Installation
+## Installation
 
 1. Clone or download this repository.
 2. Copy the folder to your `Documents/Arduino/libraries/` directory.
