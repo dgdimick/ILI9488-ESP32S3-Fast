@@ -1,5 +1,5 @@
 #include <SPI.h>
-#include <ILI9488.h>
+#include <ILI9488-ESP32S3.h>
 
 // Pin definitions
 #define TFT_CS    10

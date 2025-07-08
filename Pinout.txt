@@ -8,5 +8,5 @@ Pinout - tested good
 | DC          | GPIO 9       |
 | MOSI        | GPIO 11      |
 | SCK         | GPIO 12      |
-| RESET       | GPIO 13      |
+| RESET       | GPIO 8       |
 | LED (BKL)   | GPIO 14      |
