@@ -1,0 +1,12 @@
+
+
+Pinout - tested good
+
+| ILI9488 Pin | ESP32-S3 Pin |
+|-------------|--------------|
+| CS          | GPIO 10      |
+| DC          | GPIO 9       |
+| MOSI        | GPIO 11      |
+| SCK         | GPIO 12      |
+| RESET       | GPIO 13      |
+| LED (BKL)   | GPIO 14      |
