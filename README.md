@@ -4,7 +4,7 @@
 
 This is a fast and simplified fork of [jaretburkett's ILI9488 library](https://github.com/jaretburkett/ILI9488), modified for compatibility with ESP32-S3 and other ESP32 variants.
 
-## ? Features
+##  Features
 
 - Optimized for **ESP32-S3** (also works on ESP32 and ESP32-S2)
 - Supports **ILI9488** SPI displays
@@ -12,12 +12,12 @@ This is a fast and simplified fork of [jaretburkett's ILI9488 library](https://g
 - Uses hardware SPI for high performance
 - Includes fast screen-clearing and RGB332 support
 
-## ??? Supported Display Controllers
+## Supported Display Controllers
 
 | Controller | Interface | Resolution | Status |
 |------------|-----------|------------|--------|
-| ILI9488    | SPI (4-wire) | 480x320 | ? Fully Supported |
-| ST7796S    | SPI (4-wire) | 480x320 | ? Compatible (confirmed working)* |
+| ILI9488    | SPI (4-wire) | 480x320 |  Fully Supported |
+| ST7796S    | SPI (4-wire) | 480x320 |  Compatible (confirmed working)* |
 
 > \* The ST7796S controller is not explicitly initialized but is compatible with the ILI9488 command set. The library functions (text, graphics, etc.) have been verified to work on ST7796S modules with proper SPI wiring.
 
