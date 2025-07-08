@@ -15,7 +15,7 @@
   MIT license, all text above must be included in any redistribution
  ****************************************************/
 
-#include "ILI9488.h"
+#include "ILI9488-ESP32S3.h"
 #ifdef __AVR
   #include <avr/pgmspace.h>
 #elif defined(ESP8266)
