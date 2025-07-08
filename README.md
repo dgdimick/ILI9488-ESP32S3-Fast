@@ -36,7 +36,7 @@ This is a fast and simplified fork of [jaretburkett's ILI9488 library](https://g
 
 ## Wiring Example (ESP32-S2 and S3)
 
-## ESP32-S3
+ESP32-S3
 ```cpp
 #define TFT_CS   10
 #define TFT_DC    9
@@ -44,8 +44,7 @@ This is a fast and simplified fork of [jaretburkett's ILI9488 library](https://g
 #define TFT_BL   39  // Optional: Backlight control pin
 
 
-## ESP32-S2
-
+ESP32-S2
 ```cpp
 #define TFT_CS   37
 #define TFT_DC   33
