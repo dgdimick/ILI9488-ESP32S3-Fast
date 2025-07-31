@@ -17,6 +17,7 @@
 
 #ifndef _ILI9488H_
 #define _ILI9488H_
+#include <SPI.h>  // <-- Add this
 
 #if ARDUINO >= 100
  #include "Arduino.h"
