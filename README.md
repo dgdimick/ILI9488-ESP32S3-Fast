@@ -8,7 +8,7 @@ This is a fast and simplified fork of [jaretburkett's ILI9488 library](https://g
 
 - Optimized for **ESP32-S3** (also works on ESP32 and ESP32-S2)
 - Supports **ILI9488** SPI displays
-- Confirmed compatibility with **ST7796S** 480x320 SPI displays
+- Confirmed compatibility with **ST7796S** 4" 480x320 SPI displays
 - Uses hardware SPI for high performance
 - Includes fast screen-clearing and RGB332 support
 
