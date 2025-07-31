@@ -1,6 +1,6 @@
 # ILI9488-ESP32S3-FAST Arduino Library
 
-**Updated July 2025**
+**Updated July 31 2025**
 
 This is a fast and simplified fork of [jaretburkett's ILI9488 library](https://github.com/jaretburkett/ILI9488), modified for compatibility with ESP32-S3 and other ESP32 variants.
 
